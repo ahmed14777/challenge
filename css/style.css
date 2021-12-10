@@ -1,0 +1,148 @@
+
+
+
+
+/* start global style */
+:root{
+    --main-color:#00cc00;
+}
+*{
+    margin: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat:no-repeat ;
+    color: #fff;
+}
+/* end global style */
+
+
+
+
+/* start style of the header */
+.container{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 65%;
+    height: 85vh;
+    margin: 20px auto 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.header{
+    padding: 30px 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    height: 80px;
+    margin-top: 40px;
+}
+
+.header h2 {
+    color: var(--main-color);
+    margin: 10px 0 5px ;
+}
+.links ul{
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    width: 700px;
+    line-height: 40px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.links ul li a{
+    text-decoration: none;
+    margin: 3px;
+    padding: 4px;
+    color: #000;
+    font-size: 11px;
+    background-color: #fff;
+    border: .5px solid rgb(29, 29, 29);
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+.links ul li a:hover{
+    font-size: 14px;
+}
+/* end style of the header */
+
+
+
+/*      questo è soltanto un esempio per usare media         */
+@media screen and (max-width: 1209px)
+{
+    .links ul{
+        width: 560px;
+    }
+}
+/* ------------------------------------------------------- */
+
+
+/* start list if monopattino style */
+
+.monopattino ul{
+    width: 50%;
+    list-style: square inside;
+    margin-left: 60px;
+    line-height: 20px;
+}
+.monopattino ul li{
+    margin-bottom: 45px;
+}
+.monopattino ul li::marker{
+    font-size:25px;
+}
+.monopattino h3{
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    bottom: 3px;
+}
+.monopattino ul li .address, .monopattino ul li .carica{
+    color: #d3d3d3;
+    font-weight: 100;
+    font-size: 12px;
+}
+.monopattino ul li .carica{
+    position: relative;
+}
+.monopattino ul li .carica::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 60%;
+    height: 25px;
+    border-radius: 7px;
+    background-color: #ffcc66;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.monopattino ul li .green::before{
+width: 100%;
+background-color: #33cc33;
+}
+.monopattino ul li .red::before{
+width: 25%;
+background-color: #cc3333;
+}
+
+/* end list if monopattino style */
+
